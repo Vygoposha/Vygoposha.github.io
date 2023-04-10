@@ -1,0 +1,354 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #939393;
+    font-size: 18px;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: grid;
+    background-color: rgb(71, 170, 137);
+    grid-template: minmax(100px, auto) 1fr minmax(70px, auto)/ 250px 1fr;
+    grid-template-areas: 
+    'header header'
+    'main main'
+    'footer footer';
+}
+
+.header{
+    grid-area: header;
+    background-color: #ffffff;
+    display: grid;
+    grid-template:1fr minmax(auto, 70px) /1fr minmax(200px, 300px) minmax(auto, 1100px) 1fr;
+    padding: 30px 15px;
+}
+
+.header__logo{
+    border-radius: 50%;
+    margin: 10px 0px 100px 0px;
+    grid-row: 1/3;
+    grid-column: 2/3;
+    align-self:center;
+    justify-self:center;
+
+}
+
+.header__link__main{
+    color: #727272;
+    font-weight: bold;
+}
+
+.profile_photo{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-top: 30px;
+   
+}
+
+.myname{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0px 0px 30px;
+    grid-row: 1/2;
+    grid-column: 3/4;
+    
+}
+
+.fist__name{
+    color: #939393;
+    font-weight: lighter;
+    
+}
+
+.second_name{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    color: #f8bb10;
+    font-weight:900;
+}
+
+.header__menu{
+    grid-row: 2/3;
+    grid-column: 3/4;   
+}
+
+.header__list{
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: start;
+    list-style-type: none;
+}
+
+.main{
+    background-color: rgb(255, 255, 255);
+    grid-area: main;
+    padding: 30px 15px;
+    display: grid;
+    grid-template: repeat(4, auto) /1fr minmax(200px, 300px) minmax(auto, 1100px) 1fr;   
+}
+
+.sidebar{
+    display: grid;
+    grid-area: sidebar;
+    background-color: #f8f8f8;
+    grid-column: 2/3;
+    grid-row: 1/5;
+    text-align:right;
+    vertical-align: bottom;
+    padding: 0px 10px;
+    
+}
+
+
+.sidebar__menu{
+  display: grid;
+  
+}
+
+.sidebar__list{
+    display: grid;
+    grid-template-rows: minmax(auto, 200px) minmax(auto, 200px) minmax(auto, 500px) minmax(1100px, auto);
+    list-style-type: none;
+}
+
+.content_main { 
+    display: grid;
+    grid-template-rows: minmax(auto, 200px) minmax(auto, 200px) minmax(auto, 500px) minmax(1100px, auto);
+    grid-area: content;
+    background-color: rgb(250, 250, 250);
+    grid-column: 3/4;
+    grid-row: 1/5;     
+}
+
+
+.intro{
+    display: grid;
+    grid-row: 1/2;
+    margin: 0px;
+    background-color: rgb(240, 240, 240);
+    line-height: 1.75;
+    padding: 20px 40px;
+}
+    
+
+.technology__stack{
+    grid-row: 2/3;
+    background-color: rgb(230, 230, 230);
+    padding: 20px 40px;
+}
+
+button{
+    height: 45px;
+    font-size: 20px;
+    width: auto;
+    border-radius: 30px;
+    background-color:#727272;
+    color: #fff;
+    border: #f8bb10 2.8px solid;
+}
+
+
+.skill{
+    grid-row: 3/4;
+    background-color: rgb(240, 240, 240);
+    padding: 20px 40px;
+}
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container_skills {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #f8bb10; color: #727272; font-weight: bold;} /* Green */
+.css {width: 80%; background-color: #f8bb10;color: #727272; font-weight: bold;} /* Blue */
+.js {width: 65%; background-color: #f8bb10;color: #727272; font-weight: bold;} /* Red */
+.php {width: 60%; background-color: #f8bb10;color: #727272; font-weight: bold;} /* Dark Grey */
+
+
+* {
+    box-sizing: border-box;
+}
+
+.experiense{
+    grid-row: 4/5;
+    position: relative;
+    max-width: 1200px;
+    /*margin: 30px 300px;*/
+    background-color: rgb(230, 230, 230);
+}
+
+/* The actual timeline (the vertical ruler) */
+.experiense::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(7, 7, 7);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #f8bb10;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0%;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgb(20, 20, 20);
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(5, 5, 5) transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: rgb(255, 254, 254);
+    border: 1px solid;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+
+
+
+
+
+
+.sidbar_intro{
+    grid-row: 1/2;
+    
+}
+
+.sidbar_stack{
+    grid-row: 2/3;
+}
+
+.sidbar_skills{
+    grid-row: 3/4;
+    
+}
+
+.sidbar_experiense{
+    grid-row: 4/5;
+}
+
+
+.footer{
+    display: grid;
+    grid-area: footer;
+    grid-template:1fr /1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+    background-color: antiquewhite;
+    padding: 15px;
+    align-items: center;
+}
+
+.footer__copy{
+    grid-column: 2/3;
+}
+
+.footer__text{
+    text-align:right;
+    grid-column: 3/4;
+}
