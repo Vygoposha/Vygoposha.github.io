@@ -195,6 +195,8 @@ body{
 .container_skills {
   width: 100%; /* Full width */
   background-color: #ddd; /* Grey background */
+  border-radius: 20px;
+ 
 }
 
 .skills {
@@ -203,12 +205,14 @@ body{
   padding-bottom: 10px; /* Add bottom padding */
   color: white; /* White text color */
   font-size: 30px;
+  border-radius: 20px;
 }
 
-.html {width: 90%; background-color: #f8bb10; color: #727272; font-weight: bold;} /* Green */
-.css {width: 80%; background-color: #f8bb10;color: #727272; font-weight: bold;} /* Blue */
-.js {width: 65%; background-color: #f8bb10;color: #727272; font-weight: bold;} /* Red */
-.php {width: 60%; background-color: #f8bb10;color: #727272; font-weight: bold;} /* Dark Grey */
+.html {width: 90%; background-color: #f8bb10; color: #727272; font-weight: bold; } 
+.css {width: 80%; background-color: #f8bb10;color: #727272; font-weight: bold;} 
+.js {width: 40%; background-color: #f8bb10;color: #727272; font-weight: bold;} 
+.python {width: 60%; background-color: #f8bb10;color: #727272; font-weight: bold;} 
+.php {width: 40%; background-color: #f8bb10;color: #727272; font-weight: bold;} 
 
 
 * {
