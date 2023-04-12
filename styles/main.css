@@ -489,6 +489,11 @@ body {
 
 }
 
+.footer__uplink{
+  
+  text-align: center;
+}
+
 .footer__text {
   text-align: right;
   grid-column: 3/4;
