@@ -9,9 +9,6 @@ body {
   font-size: 18px;
 }
 
-.wrapper {}
-
-
 .header {
   grid-area: header;
   background-color: #ffffff;
@@ -151,7 +148,6 @@ body {
   list-style-type: none;
 }
 
-.content_main {}
 
 
 .intro {
@@ -226,7 +222,7 @@ body {
 }
 
 .html {
-  width: 80%;
+  width: 70%;
   background-color: #f8bb10;
   color: #727272;
   font-weight: bold;
@@ -494,7 +490,7 @@ body {
 
 .footer__uplink{
   grid-column: 3/4;
-  text-align: center;
+  /* text-align: center; */
 }
 
 a{
@@ -508,13 +504,6 @@ a{
   
 }
 
-.footer__uplink, a:link {
-  
-}
-
-.footer__uplink, a:visited {
-  
-}
 
 .footer__text {
   text-align: right;
