@@ -1,3 +1,8 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #939393;
@@ -472,7 +477,7 @@ body {
 .footer {
   display: grid;
   grid-area: footer;
-  grid-template: 1fr /1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+  grid-template: 1fr /1fr 1fr 1fr 1fr;
   background-color: #f8f8f8;
   padding: 15px;
   align-items: center;
@@ -484,19 +489,34 @@ body {
 }
 
 .footer__copy {
-  grid-column: 2/3;
-
-
+  grid-column: 1/2;
 }
 
 .footer__uplink{
-  
+  grid-column: 3/4;
   text-align: center;
+}
+
+a{
+  text-decoration:underline;
+  color: #727272;
+}
+
+.footer__uplink a{
+  color: #f8bb10;
+  text-decoration: none;
+  
+}
+
+.footer__uplink, a:link {
+  
+}
+
+.footer__uplink, a:visited {
+  
 }
 
 .footer__text {
   text-align: right;
-  grid-column: 3/4;
-  /* color: #f8bb10; */
-
+  grid-column: 4/5;
 }
