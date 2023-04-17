@@ -105,8 +105,17 @@ body {
 
 @media (max-width: 991px) {
   .header__list {
-    display: none;
+    display: block;
+
   }
+  .header__menu {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    
+  }
+  .header__link {
+    margin: 15px 0px 15px 0px;
+    }
 }
 
 
