@@ -116,6 +116,7 @@ body {
   .header__link {
     margin: 15px 0px 15px 0px;
     }
+
 }
 
 
@@ -498,8 +499,8 @@ body {
 }
 
 .footer__uplink{
-  grid-column: 3/4;
-  /* text-align: center; */
+  grid-column: 2/4;
+  text-align: center;
 }
 
 a{
@@ -510,7 +511,13 @@ a{
 .footer__uplink a{
   color: #f8bb10;
   text-decoration: none;
-  
+  font-size: 20px;
+}
+
+@media (max-width: 991px) {
+  .footer__uplink a{
+    font-size: 40px;
+  }
 }
 
 
