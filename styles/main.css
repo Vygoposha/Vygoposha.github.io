@@ -106,17 +106,20 @@ body {
 @media (max-width: 991px) {
   .header__list {
     display: block;
+    margin: 0;
 
   }
   .header__menu {
     grid-row: 3/4;
     grid-column: 2/4;
     column-count: 2;
+    margin-top: 0;
     font-size:x-large;
-    text-align: center;
-  }
+    text-align: left;
+    padding: 0px 0px 0px 50px;
+    }
   .header__link {
-    margin: 15px 0px 15px 0px;
+    margin: 0px 0px 15px 0px;
     }
 
 }
