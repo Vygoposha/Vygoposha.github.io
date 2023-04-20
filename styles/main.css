@@ -40,6 +40,9 @@ body {
 
 }
 
+.header__link__main,img{
+  width: 25px;
+}
 
 .hovered {
   word-wrap: break-word;
